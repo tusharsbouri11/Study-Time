@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Study Time</string>
+    <string name="featured">Featured Courses</string>
+    <string name="new_courses">New Courses</string>
+</resources>

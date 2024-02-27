@@ -1,0 +1,866 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="829dp"
+        android:layout_height="835dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/banner1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="36dp"
+                android:text="@string/featured"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <HorizontalScrollView
+                android:id="@+id/horizontalScrollView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fillViewport="true"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/banner1">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/coursePckg1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/courseImg1"
+                            android:layout_width="115dp"
+                            android:layout_height="59dp"
+                            android:layout_marginStart="15dp"
+                            android:contentDescription="TODO"
+                            android:src="@drawable/java"
+                            android:visibility="visible" />
+
+                        <TextView
+                            android:id="@+id/courseName1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15dp"
+                            android:layout_weight="1"
+                            android:paddingTop="5dp"
+                            android:text="Java Master Course"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:id="@+id/instr1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15dp"
+                            android:layout_weight="1"
+                            android:paddingTop="5dp"
+                            android:text="James Gosling"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:id="@+id/price1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15dp"
+                            android:layout_weight="1"
+                            android:paddingTop="5dp"
+                            android:text="\u20B9 999"
+                            android:textColor="@color/black" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/coursePckg2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/courseImg2"
+                            android:layout_width="115dp"
+                            android:layout_height="59dp"
+                            android:layout_marginStart="15dp"
+                            android:src="@drawable/letterc" />
+
+                        <TextView
+                            android:id="@+id/courseName2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15dp"
+                            android:paddingTop="5dp"
+                            android:text="C Zero to Hero"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:id="@+id/instr2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15dp"
+                            android:paddingTop="5dp"
+                            android:text="Dennis Ritchie"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:id="@+id/price2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15dp"
+                            android:paddingTop="5dp"
+                            android:text="\u20B9 999"
+                            android:textColor="@color/black" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/coursePckg3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/courseImg3"
+                            android:layout_width="115dp"
+                            android:layout_height="59dp"
+                            android:layout_marginStart="15dp"
+                            android:src="@drawable/android" />
+
+                        <TextView
+                            android:id="@+id/courseName3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15dp"
+                            android:paddingTop="5dp"
+                            android:text="Android Development"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:id="@+id/instr3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15dp"
+                            android:paddingTop="5dp"
+                            android:text="Andy Rubin"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:id="@+id/price3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15dp"
+                            android:paddingTop="5dp"
+                            android:text="\u20B9 999"
+                            android:textColor="@color/black" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/coursePckg4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/courseImg4"
+                            android:layout_width="115dp"
+                            android:layout_height="59dp"
+                            android:layout_marginStart="15dp"
+                            android:src="@drawable/angular" />
+
+                        <TextView
+                            android:id="@+id/courseName4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:paddingTop="5dp"
+                            android:text="Angular"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:id="@+id/instr4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:paddingTop="5dp"
+                            android:text="Google Inc."
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:id="@+id/price4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15dp"
+                            android:paddingTop="5dp"
+                            android:text="\u20B9 999"
+                            android:textColor="@color/black" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/coursePckg5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/courseImg5"
+                            android:layout_width="115dp"
+                            android:layout_height="59dp"
+                            android:layout_marginLeft="15dp"
+                            android:src="@drawable/js" />
+
+                        <TextView
+                            android:id="@+id/courseName5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:paddingTop="5dp"
+                            android:text="Complete JS Course"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:id="@+id/instr5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15dp"
+                            android:paddingTop="5dp"
+                            android:text="Web Dev 3.0"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:id="@+id/price5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15dp"
+                            android:paddingTop="5dp"
+                            android:text="\u20B9 999"
+                            android:textColor="@color/black" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/coursePckg6"
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:onClick="dummymain">
+
+
+                        <TextView
+                            android:id="@+id/txtpckg6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="See All ->"
+                            android:textAlignment="center"
+                            android:textAllCaps="false"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <TextView
+                android:id="@+id/banner2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="36dp"
+                android:text="@string/new_courses"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <HorizontalScrollView
+                android:id="@+id/newCourses"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fillViewport="true"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/banner2">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/newcoursePckg1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:clickable="true"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/newcourseImg1"
+                            android:layout_width="115dp"
+                            android:layout_height="59dp"
+                            android:layout_marginLeft="15dp"
+                            android:src="@drawable/nodejs" />
+
+                        <TextView
+                            android:id="@+id/newcourseName1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15dp"
+                            android:paddingTop="5dp"
+                            android:text="Node.Js Course"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:id="@+id/newinstr1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:paddingTop="5dp"
+                            android:text="Web Devs 3.0"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:id="@+id/newprice1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:paddingTop="5dp"
+                            android:text="\u20B9 699"
+                            android:textColor="@color/black" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/newcoursePckg2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/newcourseImg2"
+                            android:layout_width="115dp"
+                            android:layout_height="59dp"
+                            android:layout_marginLeft="15dp"
+                            android:src="@drawable/python" />
+
+                        <TextView
+                            android:id="@+id/newcourseName2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15dp"
+                            android:paddingTop="5dp"
+                            android:text="Python BootCamp"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:id="@+id/newinstr2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15dp"
+                            android:paddingTop="5dp"
+                            android:text="Snaky Devs"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:id="@+id/newprice2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:paddingTop="5dp"
+                            android:text="\u20B9 899"
+                            android:textColor="@color/black" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/newcoursePckg3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/newcourseImg3"
+                            android:layout_width="115dp"
+                            android:layout_height="59dp"
+                            android:layout_marginLeft="15dp"
+                            android:src="@drawable/react" />
+
+                        <TextView
+                            android:id="@+id/newcourseName3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:paddingTop="5dp"
+                            android:text="ReactJs Master Course"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:id="@+id/newinstr3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:paddingTop="5dp"
+                            android:text="Web Devs 3.0"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:id="@+id/newprice3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15dp"
+                            android:paddingTop="5dp"
+                            android:text="\u20B9 799"
+                            android:textColor="@color/black" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/newcoursePckg4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/newcourseImg4"
+                            android:layout_width="115dp"
+                            android:layout_height="59dp"
+                            android:layout_marginLeft="15dp"
+                            android:src="@drawable/swift" />
+
+                        <TextView
+                            android:id="@+id/newcourseName4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:paddingTop="5dp"
+                            android:text="Swift Full Course"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:id="@+id/newinstr4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:paddingTop="5dp"
+                            android:text="Apple Fans"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:id="@+id/newprice4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:paddingTop="5dp"
+                            android:text="\u20B9 99999"
+                            android:textColor="@color/black" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/newcoursePckg5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/newcourseImg5"
+                            android:layout_width="115dp"
+                            android:layout_height="59dp"
+                            android:layout_marginLeft="15dp"
+                            android:src="@drawable/html" />
+
+                        <TextView
+                            android:id="@+id/newcourseName5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:paddingTop="5dp"
+                            android:text="HTML Course"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:id="@+id/newinstr5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:paddingTop="5dp"
+                            android:text="Web Devs 3.0"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:id="@+id/newprice5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:paddingTop="5dp"
+                            android:text="\u20B9 599"
+                            android:textColor="@color/black" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <TextView
+                android:id="@+id/banner3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="36dp"
+                android:text="Popular Courses"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <HorizontalScrollView
+                android:id="@+id/popularCourses"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fillViewport="true"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/banner3">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/popularcoursePckg1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/popularcourseImg1"
+                            android:layout_width="115dp"
+                            android:layout_height="59dp"
+                            android:layout_marginLeft="15dp"
+                            android:src="@drawable/java" />
+
+                        <TextView
+                            android:id="@+id/popularcourseName1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:paddingTop="5dp"
+                            android:text="Java Master Course"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:id="@+id/popularinstr1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:paddingTop="5dp"
+                            android:text="James Gosling"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:id="@+id/popularprice1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:paddingTop="5dp"
+                            android:text="\u20B9 999"
+                            android:textColor="@color/black" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/popularcoursePckg2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/popularcourseImg2"
+                            android:layout_width="115dp"
+                            android:layout_height="59dp"
+                            android:layout_marginLeft="15dp"
+                            android:src="@drawable/python" />
+
+                        <TextView
+                            android:id="@+id/popularcourseName2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:paddingTop="5dp"
+                            android:text="Python BootCamp"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:id="@+id/popularinstr2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:paddingTop="5dp"
+                            android:text="Snaky Devs"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:id="@+id/popularprice2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:paddingTop="5dp"
+                            android:text="\u20B9 899"
+                            android:textColor="@color/black" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/popularcoursePckg3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/popularcourseImg3"
+                            android:layout_width="115dp"
+                            android:layout_height="59dp"
+                            android:layout_marginLeft="15dp"
+                            android:src="@drawable/kotlin" />
+
+                        <TextView
+                            android:id="@+id/popularcourseName3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:paddingTop="5dp"
+                            android:text="Kotlin Master Course"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:id="@+id/popularinstr3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:paddingTop="5dp"
+                            android:text="IntelliJ Labs"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:id="@+id/popularprice3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:paddingTop="5dp"
+                            android:text="\u20B9 699"
+                            android:textColor="@color/black" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/popularcoursePckg4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/popularcourseImg4"
+                            android:layout_width="115dp"
+                            android:layout_height="59dp"
+                            android:layout_marginLeft="15dp"
+                            android:src="@drawable/android" />
+
+                        <TextView
+                            android:id="@+id/popularcourseName4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:paddingTop="5dp"
+                            android:text="Android Development"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:id="@+id/popularinstr4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:paddingTop="5dp"
+                            android:text="Andy Rubin"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:id="@+id/popularprice4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:paddingTop="5dp"
+                            android:text="\u20B9 999"
+                            android:textColor="@color/black" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/popularcoursePckg5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/popularcourseImg5"
+                            android:layout_width="115dp"
+                            android:layout_height="59dp"
+                            android:layout_marginLeft="15dp"
+                            android:src="@drawable/css" />
+
+                        <TextView
+                            android:id="@+id/popularcourseName5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:paddingTop="5dp"
+                            android:text="CSS Course"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:id="@+id/popularinstr5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:paddingTop="5dp"
+                            android:text="Web Devs 3.0"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:id="@+id/popularprice5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:paddingTop="5dp"
+                            android:text="\u20B9 499"
+                            android:textColor="@color/black" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/popularcoursePckg6"
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:id="@+id/populartxtpckg6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="See All ->"
+                            android:textAlignment="center"
+                            android:textAllCaps="false"
+                            android:textSize="16sp"
+                            android:onClick="dummymain"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="45dp"
+                android:layout_marginBottom="50dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="5dp"
+                    android:text="Companies that use our resources"
+                    android:textAlignment="center"
+                    android:textSize="20sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:paddingLeft="50dp"
+                    android:paddingRight="50dp">
+
+                    <ImageView
+                        android:id="@+id/img1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="70dp"
+                        android:layout_weight="1"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp"
+                        app:srcCompat="@drawable/office1" />
+
+                    <ImageView
+                        android:id="@+id/img2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="70dp"
+                        android:layout_weight="1"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp"
+                        app:srcCompat="@drawable/office2" />
+
+                    <ImageView
+                        android:id="@+id/img3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="70dp"
+                        android:layout_weight="1"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp"
+                        app:srcCompat="@drawable/office3" />
+
+                    <ImageView
+                        android:id="@+id/img4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="70dp"
+                        android:layout_weight="1"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp"
+                        app:srcCompat="@drawable/office4" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/navigation_menu" />
+
+
+</RelativeLayout>

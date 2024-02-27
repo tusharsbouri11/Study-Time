@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="90dp">
+
+            <SearchView
+                android:id="@+id/searchView"
+                android:layout_width="350dp"
+                android:layout_height="38dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="1dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.333"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/catBan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="35dp"
+                android:text="Categories to choose from :"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/catpckg1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:paddingTop="10dp"
+                    android:onClick="dummysearch">
+
+                    <ImageView
+                        android:id="@+id/catimg1"
+                        android:layout_width="24dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_weight="1"
+                        android:paddingLeft="35dp"
+                        android:scaleType="fitStart"
+                        app:srcCompat="@drawable/analytics" />
+
+                    <TextView
+                        android:id="@+id/cattxt1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="-250dp"
+                        android:layout_weight="1"
+                        android:paddingLeft="20dp"
+                        android:paddingTop="10dp"
+                        android:text="Python \u0026 Data Analysis"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/catpckg2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:paddingTop="10dp"
+                    android:onClick="dummysearch">
+
+                    <ImageView
+                        android:id="@+id/catimg2"
+                        android:layout_width="24dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_weight="1"
+                        android:paddingLeft="35dp"
+                        android:scaleType="fitStart"
+                        app:srcCompat="@drawable/accounting" />
+
+                    <TextView
+                        android:id="@+id/cattxt2"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="-250dp"
+                        android:layout_weight="1"
+                        android:paddingLeft="20dp"
+                        android:paddingTop="10dp"
+                        android:text="Accounting \u0026 Finance"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/catpckg3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:paddingTop="10dp"
+                    android:onClick="dummysearch">
+
+                    <ImageView
+                        android:id="@+id/catimg3"
+                        android:layout_width="24dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_weight="1"
+                        android:paddingLeft="35dp"
+                        android:scaleType="fitStart"
+                        app:srcCompat="@drawable/design" />
+
+                    <TextView
+                        android:id="@+id/cattxt3"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="-250dp"
+                        android:layout_weight="1"
+                        android:paddingLeft="20dp"
+                        android:paddingTop="10dp"
+                        android:text="UI/UX Design"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/catpckg4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:paddingTop="10dp"
+                    android:onClick="dummysearch">
+
+                    <ImageView
+                        android:id="@+id/catimg4"
+                        android:layout_width="24dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_weight="1"
+                        android:paddingLeft="35dp"
+                        android:scaleType="fitStart"
+                        app:srcCompat="@drawable/development" />
+
+                    <TextView
+                        android:id="@+id/cattxt4"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="-250dp"
+                        android:layout_weight="1"
+                        android:paddingLeft="20dp"
+                        android:paddingTop="10dp"
+                        android:text="Development"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/catpckg5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:paddingTop="10dp"
+                    android:onClick="dummysearch">
+
+                    <ImageView
+                        android:id="@+id/catimg5"
+                        android:layout_width="24dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_weight="1"
+                        android:paddingLeft="35dp"
+                        android:scaleType="fitStart"
+                        app:srcCompat="@drawable/health" />
+
+                    <TextView
+                        android:id="@+id/cattxt5"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="-250dp"
+                        android:layout_weight="1"
+                        android:paddingLeft="20dp"
+                        android:paddingTop="10dp"
+                        android:text="Health \u0026 Fitness"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/catpckg6"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:paddingTop="10dp"
+                    android:onClick="dummysearch">
+
+                    <ImageView
+                        android:id="@+id/catimg6"
+                        android:layout_width="24dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_weight="1"
+                        android:paddingLeft="35dp"
+                        android:scaleType="fitStart"
+                        app:srcCompat="@drawable/marketing" />
+
+                    <TextView
+                        android:id="@+id/cattxt6"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="-250dp"
+                        android:layout_weight="1"
+                        android:paddingLeft="20dp"
+                        android:paddingTop="10dp"
+                        android:text="Markering"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/catpckg7"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:paddingTop="10dp"
+                    android:onClick="dummysearch">
+
+                    <ImageView
+                        android:id="@+id/catimg7"
+                        android:layout_width="24dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_weight="1"
+                        android:paddingLeft="35dp"
+                        android:scaleType="fitStart"
+                        app:srcCompat="@drawable/music" />
+
+                    <TextView
+                        android:id="@+id/cattxt7"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="-250dp"
+                        android:layout_weight="1"
+                        android:paddingLeft="20dp"
+                        android:paddingTop="10dp"
+                        android:text="Music"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/catpckg8"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:paddingTop="10dp"
+                    android:onClick="dummysearch">
+
+                    <ImageView
+                        android:id="@+id/catimg8"
+                        android:layout_width="24dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_weight="1"
+                        android:paddingLeft="35dp"
+                        android:scaleType="fitStart"
+                        app:srcCompat="@drawable/office_prod" />
+
+                    <TextView
+                        android:id="@+id/cattxt8"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="-250dp"
+                        android:layout_weight="1"
+                        android:paddingLeft="20dp"
+                        android:paddingTop="10dp"
+                        android:text="Office Productivity"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/catpckg9"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:paddingTop="10dp"
+                    android:onClick="dummysearch">
+
+                    <ImageView
+                        android:id="@+id/catimg9"
+                        android:layout_width="24dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_weight="1"
+                        android:paddingLeft="35dp"
+                        android:scaleType="fitStart"
+                        app:srcCompat="@drawable/personal_dev" />
+
+                    <TextView
+                        android:id="@+id/cattxt9"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="-250dp"
+                        android:layout_weight="1"
+                        android:paddingLeft="20dp"
+                        android:paddingTop="10dp"
+                        android:text="Self Development"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/catpckg10"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:paddingTop="10dp"
+                    android:onClick="dummysearch">
+
+                    <ImageView
+                        android:id="@+id/catimg10"
+                        android:layout_width="24dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_weight="1"
+                        android:paddingLeft="35dp"
+                        android:scaleType="fitStart"
+                        app:srcCompat="@drawable/photography" />
+
+                    <TextView
+                        android:id="@+id/cattxt10"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="-250dp"
+                        android:layout_weight="1"
+                        android:paddingLeft="20dp"
+                        android:paddingTop="10dp"
+                        android:text="Photo and Videography"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/navigation_menu" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
